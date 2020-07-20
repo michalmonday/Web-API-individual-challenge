@@ -1,3 +1,5 @@
+[Click me to see the website](http://lsgc-web.000webhostapp.com/individual-challenge/)   
+
 # Written progress report
 
 ## Monday (13/01/2020)
