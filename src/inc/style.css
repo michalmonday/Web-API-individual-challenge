@@ -1,0 +1,41 @@
+* { font-family: "Lucida Sans Unicode"; }
+body { background-color: paleturquoise; overflow:hidden;}
+.endpoint { cursor:default; }
+.endpoint div { text-align: center; padding-top:4%; }
+.endpoint div span { font-size: 1.5rem; font-weight: bold; }
+.endpoint div[class^="col-"] { border-radius: 2px; }
+.endpoint div[class^="col-"]:not(.active_endpoint):hover { border: 1px dashed gray; }
+.active_endpoint { border: 2px solid gray; }
+
+textarea, #textarea_container, .paramsbox {
+	cursor:default;
+	background-color: #343a40;
+	color: lightgray;
+}
+
+#test_button {
+	cursor:default;
+	padding-top:18%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 100px;
+	background-color: #212529;
+	color: lightgray;
+}
+
+#test_button:hover { background-color: #23272B; }
+#test_button:active { background-color: #282B30; }
+.option { padding-left: 25px; padding-top: 20px; }
+.input-group-prepend span { background-color: lightgray; }
+
+/*  Prevent selecting text.
+	Reference: https://stackoverflow.com/questions/3779534/how-do-i-disable-text-selection-with-css-or-javascript  */
+.active_endpoint p, .active_endpoint span, #test_button {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
